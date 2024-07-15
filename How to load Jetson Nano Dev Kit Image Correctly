@@ -4,10 +4,8 @@ But when I follow the Link from NVIDIA (top entry from google search): https://d
 It won't work!  When I insert SD card after following up steps, Nano Dev kit would not load the OS image but boot into shell.
 Tons of online complains from Jetson communities, Reddit et al. No solid and authorizied conclusion. 
 
-Why? because the fw version is 4.61. It is stone age fw from NVIDIA. It won'd work with Jetson Nano Dev kit!
-So how about the latest version jetpack? I download the latest jetpack6; it did not work with Jetson nano dev kit neither. 
-
-
+Why? because the fw version is 4.61 from above NVIDIA link. 4.61 is stone age fw from NVIDIA. 
+So how about the latest version jetpack6? I download the latest jetpack6; it did not work with Jetson nano dev kit neither. 
 
 
 I tried couple solutions and finally reached a stable method to resolve this issue:
