@@ -13,8 +13,7 @@ I tried couple solutions and finally reached a stable method to resolve this iss
 Step1: you need a brand new MicroSD card. Format it to exFAT format; either from Window format, or the SD card format tool provided in the mid of link from nvidia above
 
 Step2: if you already messed up your MicroSD card, you won't be able to reformat it because exFAT format won't be able to show the MicroSD card. 
-you need to use Windown Disk Manager to delet SD card partition, give it a new file system and then reformated to exFAT format.
-
+you need to use Windown Disk Manager to delet SD card partition, give it a new file system and then reformated. I used Disk Manager to format it to NTFS then use the SD card format tool to do the second format. 
 
 Step3: download jetpack5.13 here: https://developer.nvidia.com/embedded/jetpack-sdk-513
 Make sure you click "SD Card Image Method" ---> "Jetson Orin Nano Development Kit" in green color link 
