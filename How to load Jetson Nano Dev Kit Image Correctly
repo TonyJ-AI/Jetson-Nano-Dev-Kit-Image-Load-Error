@@ -1,0 +1,33 @@
+Recently I purchased a Jetson Nano Dev kit for lab test. 
+But when I follow the Link from NVIDIA (top entry from google search): https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#write-windows
+
+It won't work!  When I insert SD card after following up steps, Nano Dev kit would not load the OS image but boot into shell.
+Tons of online complains from Jetson communities, Reddit et al. No solid and authorizied conclusion. 
+
+Why? because the fw version is 4.61. It is stone age fw from NVIDIA. It won'd work with Jetson Nano Dev kit!
+So how about the latest version jetpack? I download the latest jetpack6; it did not work with Jetson nano dev kit neither. 
+
+
+
+
+I tried couple solutions and finally reached a stable method to resolve this issue:
+
+Step1: you need a brand new MicroSD card. Format it to exFAT format; either from Window format, or the SD card format tool provided in the mid of link above
+
+Step2: if you already messed up your MicroSD card, you won't be able to reformat it because exFAT format won't be able to show the MicroSD card. 
+you need to use Windown Disk Manager to delet SD card partition, give it a new file system and then reformated to exFAT format.
+
+
+Step3: download jetpack5.13 here: https://developer.nvidia.com/embedded/jetpack-sdk-513
+Make sure you click "SD Card Image Method" ---> "Jetson Orin Nano Development Kit" in green color link 
+
+Step4: Download, install, and launch Etcher; and use Etcher to load the zipped Jetpack5.13 above 
+
+Step5: insert MicroSD card into Nano Dev kit. 
+It would boot into screen to ask you config nano dev kit. You need a wiif connection so it could download necessary upgrade fw. 
+After boot into OS; you need to reboot twice to correctly load all drivers and fw; Be patient when screen is black. Do not interrupt or power off when screen black. 
+
+
+Fianlly, Good Luck!
+
+Wish above could save your struggle, especially, for the first time user of Jetson Nano
